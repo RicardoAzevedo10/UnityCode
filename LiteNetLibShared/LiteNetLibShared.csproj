@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="LiteNetLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\..\..\..\LiteNetLib\LiteNetLibNetCore\bin\Release\netcoreapp3.1\LiteNetLib.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
