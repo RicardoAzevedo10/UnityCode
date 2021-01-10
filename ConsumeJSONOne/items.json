@@ -1,0 +1,26 @@
+{
+  "Hamburger": [
+    {
+      "name": "Big Mac",
+      "price": 1.5,
+      "calories": 250
+    },
+    {
+      "name": "Cheese",
+      "price": 1.5,
+      "calories": 250
+    }
+  ],
+  "Sides": [
+    {
+      "name": "Nugets",
+      "price": 0.5,
+      "calories": 100
+    },
+    {
+      "name": "Chips",
+      "price": 0.5,
+      "calories": 100
+    }
+  ]
+}
