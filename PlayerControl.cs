@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+//variables speed and gravity
     public float speed = 3.5f;
 
     private float gravity = 10f;
@@ -23,6 +24,7 @@ public class PlayerControl : MonoBehaviour
         PlayerMovement();
     }
 
+//Function to call all the movements of the player
     void PlayerMovement()
     {
         float horizontal = Input.GetAxis("Horizontal");
