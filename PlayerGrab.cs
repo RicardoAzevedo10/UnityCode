@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerGrab : MonoBehaviour
-{
+{ 
+//This script is intended for the player to grab the ball, and for cases of VR games
     public GameObject ball;
     public GameObject myHand;
     public float handPower;
@@ -27,9 +28,9 @@ public class PlayerGrab : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))// In this case this button is the right button in vr googlecardboard
         {
-            if (!inHands)
+            if (!inHands) //If the ball is not in the hands of the player, the same grab the ball
             {
                 //Grab the ball
                 ballCol.isTrigger = true;
@@ -38,10 +39,6 @@ public class PlayerGrab : MonoBehaviour
                 ballRb.velocity = Vector3.zero;
                 ballRb.useGravity = false;
                 inHands = true;
-               
-
-
-
             }
             else if(inHands)
             {
