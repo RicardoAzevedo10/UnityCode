@@ -14,8 +14,9 @@ namespace ClientOneRunner
 
         static async Task Run()
         {
+            //create a client tcp 
             TcpClient client = new TcpClient("127.0.0.1", 8080);
-            NetworkStream stream = client.GetStream();
+            NetworkStream stream = client.GetStream();//stream client
 
             Task.Run(async () =>
             {
