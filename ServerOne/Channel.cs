@@ -16,6 +16,7 @@ namespace ServerOne
         private ArrayPool<byte> buffers;
         private bool isDisposed;
 
+        //Create a protocol TCP and a socket to store the information
         public Channel(TcpClient socket, Protocol protocol)
         {
             this.socket = socket;
@@ -29,9 +30,9 @@ namespace ServerOne
             while (true)
             {
                 byte[] buffer = buffers.Rent(512);
-                int bytesCount = await stream.ReadAsync(buffer);
+                int bytesCount = await stream.ReadAsync(buffer);//while true te socket continues to read the data
 
-                if (bytesCount <= 0)
+                if (bytesCount <= 0)//if there is no data this stops and break the cycle
                 {
                     break;
                 }
