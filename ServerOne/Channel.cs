@@ -9,6 +9,7 @@ namespace ServerOne
 {
     public class Channel : IDisposable
     {
+       //Create a server usign TCP
         private TcpClient socket;
         private NetworkStream stream;
         private Protocol protocol;
