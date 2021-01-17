@@ -19,7 +19,7 @@ namespace ConsumeParseCSVOne
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] tokens = line.Split('|');//make another paragraph
-                    people.Add(new Person(tokens[0], tokens[1], tokens[2]));
+                    people.Add(new Person(tokens[0], tokens[1], tokens[2]));//add people with is name,email and country
                 }   
             }
         }
